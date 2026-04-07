@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #1a1a2e;
+  color: #e0e0e0;
+  padding: 2rem;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  color: #8be9fd;
+  font-size: 1.5rem;
+}
+
+h1 small {
+  color: #666;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+.status {
+  padding: 0.75rem 1rem;
+  background: #16213e;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  border-left: 3px solid #555;
+}
+
+.status.connected {
+  border-left-color: #50fa7b;
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background: #0f3460;
+  color: #e0e0e0;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  background: #1a5276;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.send-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.send-row input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: #16213e;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+}
+
+#log {
+  background: #0a0a1a;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 1rem;
+  max-height: 60vh;
+  overflow-y: auto;
+  font-family: "SF Mono", "Fira Code", monospace;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.log-entry {
+  border-bottom: 1px solid #1a1a2e;
+  padding: 2px 0;
+}
+
+.log-entry .ts {
+  color: #666;
+}
+
+.log-entry.info {
+  color: #8be9fd;
+}
+
+.log-entry.success {
+  color: #50fa7b;
+}
+
+.log-entry.error {
+  color: #ff5555;
+}
+
+.log-entry.msg-in {
+  color: #bd93f9;
+}
+
+.log-entry.msg-out {
+  color: #f1fa8c;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "cross-tab-comms",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.4"
+  }
+}
